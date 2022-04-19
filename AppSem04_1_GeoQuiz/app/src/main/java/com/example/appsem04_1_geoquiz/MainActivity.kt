@@ -5,6 +5,7 @@ import android.os.Bundle
 import android.widget.Button
 import android.widget.TextView
 import android.widget.Toast
+import kotlin.system.exitProcess
 
 class MainActivity : AppCompatActivity() {
 
@@ -74,8 +75,6 @@ class MainActivity : AppCompatActivity() {
             }
         }*/
 
-        if (fails == 3)return
-
         btYes.setOnClickListener { //funcion que permite hacer una accion al presioanr click ahi
             if (questions[position].answer == true){
                 if (score != position +1){
@@ -91,6 +90,10 @@ class MainActivity : AppCompatActivity() {
                 Toast.makeText(this, "Incorrecto", Toast.LENGTH_LONG).show() // metodo long es para mostrar el texto mayor tiempo
                 fails++
                 tvFail.text = "Errores $fails"
+                if (fails == 3) {
+                    finish()
+                }
+
             }
         }
 
@@ -108,6 +111,10 @@ class MainActivity : AppCompatActivity() {
                 Toast.makeText(this, "Incorrecto", Toast.LENGTH_LONG).show() // metodo long es para mostrar el texto mayor tiempo
                 fails++
                 tvFail.text = "Errores $fails"
+                if (fails == 3) {
+                    finish()
+                }
+
             }
         }
 
@@ -131,6 +138,6 @@ class MainActivity : AppCompatActivity() {
 2. que valide el tamaño del arrayL - ok
 3. puntaje - ok
 4. Si fallas 3 veces el juego termina - ok
-5. Tienes 2 opciones para responder una pregunta
+5. Tienes 2 opciones para responder una pregunta - ok
 6. que se seleccione continentes / temas
 * */
