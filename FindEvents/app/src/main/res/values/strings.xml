@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">FindEvents</string>
+    <string name="findvents">FINDVENTS</string>
+    <string name="ingresa_tu_contrase_a">Ingresa tu contraseña</string>
+    <string name="ingresa_tu_nombre_de_usuario">Ingresa tu nombre de usuario</string>
+    <string name="no_tienes_una_cuenta_registrate_aqu">No tienes una cuenta? Registrate aquí</string>
+    <string name="ingresar">INGRESAR</string>
+    <string name="sign_up">SIGN UP</string>
+    <string name="correoelectronico_dominio_com">correoelectronico@dominio.com</string>
+    <string name="password">Password</string>
+    <string name="repeat_password">Repeat password</string>
+    <string name="ok">Ok</string>
+</resources>

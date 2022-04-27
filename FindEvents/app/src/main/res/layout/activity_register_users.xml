@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#141515"
+    tools:context=".RegisterUsers">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/clRegister"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="50dp"
+        android:layout_marginTop="100dp"
+        android:layout_marginEnd="50dp"
+        android:layout_marginBottom="100dp"
+        android:background="@drawable/register_layout_rounded"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:id="@+id/tvSignUp"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="60dp"
+            android:layout_marginTop="70dp"
+            android:layout_marginEnd="60dp"
+            android:text="@string/sign_up"
+            android:textAlignment="center"
+            android:textSize="34sp"
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <EditText
+            android:id="@+id/etMailRegister"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="32dp"
+            android:layout_marginTop="50dp"
+            android:layout_marginEnd="32dp"
+            android:ems="10"
+            android:hint="@string/correoelectronico_dominio_com"
+            android:textSize="14sp"
+            android:textColorHint="@color/black"
+            android:textColor="@color/black"
+            android:padding="7dp"
+            android:background="@drawable/register_tv_design"
+            android:inputType="textEmailAddress"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tvSignUp" />
+
+        <EditText
+            android:id="@+id/etPasswordRegister"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="32dp"
+            android:layout_marginTop="40dp"
+            android:layout_marginEnd="32dp"
+            android:textSize="14sp"
+            android:padding="7dp"
+            android:ems="10"
+            android:hint="@string/password"
+            android:textColorHint="@color/black"
+            android:textColor="@color/black"
+            android:background="@drawable/register_tv_design"
+            android:inputType="textPassword"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/etMailRegister" />
+
+        <EditText
+            android:id="@+id/etPasswordConfirm"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="32dp"
+            android:layout_marginTop="40dp"
+            android:layout_marginEnd="32dp"
+            android:ems="10"
+            android:textSize="14sp"
+            android:padding="7dp"
+            android:hint="@string/repeat_password"
+            android:textColorHint="@color/black"
+            android:textColor="@color/black"
+            android:background="@drawable/register_tv_design"
+            android:inputType="textPassword"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/etPasswordRegister" />
+
+        <Button
+            android:id="@+id/btRegisterOk"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="32dp"
+            android:layout_marginTop="40dp"
+            android:layout_marginEnd="32dp"
+            android:text="@string/ok"
+            android:background="@drawable/button_rounded"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/etPasswordConfirm" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
