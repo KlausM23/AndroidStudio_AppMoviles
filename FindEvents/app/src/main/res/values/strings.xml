@@ -12,4 +12,8 @@
     <string name="ok">Ok</string>
     <string name="se_ha_registrado_correctamente">Se ha registrado correctamente</string>
     <string name="okGoLogin">OK</string>
+    <string name="eventos_frikis_m_s">Eventos Frikis más</string>
+    <string name="cerca_de_ti">cerca de ti</string>
+    <string name="login">Login</string>
+    <string name="register">Register</string>
 </resources>
