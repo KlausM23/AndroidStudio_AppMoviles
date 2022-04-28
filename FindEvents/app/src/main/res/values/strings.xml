@@ -10,4 +10,6 @@
     <string name="password">Password</string>
     <string name="repeat_password">Repeat password</string>
     <string name="ok">Ok</string>
+    <string name="se_ha_registrado_correctamente">Se ha registrado correctamente</string>
+    <string name="okGoLogin">OK</string>
 </resources>

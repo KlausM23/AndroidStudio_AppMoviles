@@ -9,7 +9,6 @@ import android.widget.Button
 const val EXTRA_MESS = "com.example.findevents"
 
 class MainActivity : AppCompatActivity() {
-
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
