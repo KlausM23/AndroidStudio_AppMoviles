@@ -4,8 +4,9 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#141515"
+    android:background="@drawable/background_app"
     tools:context=".RegisterUsers">
+    <!--android:background="#141515"-->
 
     <androidx.constraintlayout.widget.ConstraintLayout
         android:id="@+id/clRegister"
@@ -117,38 +118,34 @@
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/etMailRegister" />
 
-        <EditText
-            android:id="@+id/etPasswordConfirm"
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:layout_marginStart="32dp"
-            android:layout_marginTop="20dp"
-            android:layout_marginEnd="32dp"
-            android:background="@drawable/register_tv_design"
-            android:ems="10"
-            android:hint="Tipo de usuario"
-            android:inputType="textPassword"
-            android:padding="7dp"
-            android:textColor="@color/black"
-            android:textColorHint="@color/black"
-            android:textSize="14sp"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/etPasswordRegister" />
-
         <Button
             android:id="@+id/btRegisterOk"
             android:layout_width="145dp"
             android:layout_height="46dp"
             android:layout_marginStart="32dp"
-            android:layout_marginTop="35dp"
+            android:layout_marginTop="30dp"
             android:layout_marginEnd="32dp"
             android:background="@drawable/button_rounded"
             android:onClick="registerComplete"
             android:text="@string/register"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/etPasswordConfirm" />
+            app:layout_constraintTop_toBottomOf="@+id/spinnerUserType" />
+
+        <Spinner
+            android:id="@+id/spinnerUserType"
+            android:layout_width="248dp"
+            android:layout_height="32dp"
+            android:layout_marginStart="32dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginEnd="32dp"
+            android:popupBackground="@color/white"
+            android:background="@drawable/register_tv_design"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/etPasswordRegister" />
 
     </androidx.constraintlayout.widget.ConstraintLayout>
+
 </androidx.constraintlayout.widget.ConstraintLayout>

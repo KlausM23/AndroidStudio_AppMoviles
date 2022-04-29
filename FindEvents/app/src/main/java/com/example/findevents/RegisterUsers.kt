@@ -6,7 +6,9 @@ import android.graphics.drawable.ColorDrawable
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.View
+import android.widget.ArrayAdapter
 import android.widget.Button
+import android.widget.Spinner
 import androidx.appcompat.app.AlertDialog
 
 class RegisterUsers : AppCompatActivity() {
@@ -14,6 +16,24 @@ class RegisterUsers : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_register_users)
+
+        //obtenemos el spinner
+        val spinner = findViewById<Spinner>(R.id.spinnerUserType)
+
+        //se obtiene los valores de la lista para mostrarlo en el spinner
+        val lista = resources.getStringArray(R.array.user_type)
+
+        //val adaptador = ArrayAdapter(this,
+         //   android.R.layout.simple_spinner_item, lista)
+
+        val adaptador = ArrayAdapter(this,
+            R.layout.spinner_item_customized, lista)
+
+        spinner.adapter = adaptador
+
+
+
+
     }
 
     fun registerComplete(view: View){

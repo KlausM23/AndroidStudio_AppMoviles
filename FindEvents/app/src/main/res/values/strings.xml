@@ -16,4 +16,11 @@
     <string name="cerca_de_ti">cerca de ti</string>
     <string name="login">Login</string>
     <string name="register">Register</string>
+
+    <string-array name="user_type">
+        <item>Tipo de usuario</item>
+        <item>Friki</item>
+        <item>Organizador</item>
+
+    </string-array>
 </resources>

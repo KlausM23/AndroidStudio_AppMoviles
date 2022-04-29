@@ -4,38 +4,26 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#141515"
+    android:background="@drawable/background_app"
+
     tools:context=".LoginUsers">
     <!--android:background="#0B0A0A"-->
-
-    <TextView
-        android:id="@+id/tvTitle"
-        android:layout_width="0dp"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="45dp"
-        android:text="@string/findvents"
-        android:textAlignment="center"
-        android:textColor="#F6F1F1"
-        android:textSize="34sp"
-        android:textStyle="bold"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
-        <!--android:background="#0B0A0A"-->
+    <!-- android:background="#141515"-->
+    <!--android:background="#0B0A0A"-->
 
     <Button
         android:id="@+id/btLogin"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginStart="120dp"
-        android:layout_marginTop="50dp"
+        android:layout_marginTop="30dp"
         android:layout_marginEnd="120dp"
         android:background="@drawable/button_rounded"
         android:text="@string/login"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/etPassword" />
+        app:layout_constraintTop_toBottomOf="@+id/spinnerUserTypeLogin" />
 
     <EditText
         android:id="@+id/etPassword"
@@ -62,7 +50,7 @@
         android:layout_width="292dp"
         android:layout_height="42dp"
         android:layout_marginStart="60dp"
-        android:layout_marginTop="130dp"
+        android:layout_marginTop="135dp"
         android:layout_marginEnd="60dp"
         android:background="@drawable/register_tv_design"
         android:ems="10"
@@ -98,27 +86,54 @@
         android:id="@+id/tvText1"
         android:layout_width="wrap_content"
         android:layout_height="33dp"
-        android:layout_marginTop="40dp"
+        android:layout_marginTop="10dp"
         android:text="@string/eventos_frikis_m_s"
         android:textAlignment="center"
         android:textColor="#FD5A27"
-        android:textSize="28dp"
+        android:textSize="27dp"
+        android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.497"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/tvTitle" />
+        app:layout_constraintTop_toBottomOf="@+id/ivTitle" />
 
     <TextView
         android:id="@+id/tvText2"
         android:layout_width="wrap_content"
         android:layout_height="33dp"
-        android:layout_marginTop="3dp"
+        android:layout_marginTop="1dp"
         android:text="@string/cerca_de_ti"
         android:textAlignment="center"
         android:textColor="#F6F1F1"
-        android:textSize="28dp"
+        android:textSize="27dp"
+        android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/tvText1" />
+
+    <ImageView
+        android:id="@+id/ivTitle"
+        android:layout_width="0dp"
+        android:layout_height="72dp"
+        android:layout_marginStart="100dp"
+        android:layout_marginTop="25dp"
+        android:layout_marginEnd="100dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@mipmap/findvents_title" />
+
+    <Spinner
+        android:id="@+id/spinnerUserTypeLogin"
+        android:layout_width="292dp"
+        android:layout_height="41dp"
+        android:layout_marginStart="60dp"
+        android:layout_marginTop="25dp"
+        android:layout_marginEnd="60dp"
+        android:popupBackground="@color/white"
+        android:background="@drawable/register_tv_design"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/etPassword" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

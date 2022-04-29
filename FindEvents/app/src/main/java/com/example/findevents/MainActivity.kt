@@ -15,7 +15,6 @@ class MainActivity : AppCompatActivity() {
     }
 
     fun initApp(view : View){
-        val btInit = findViewById<Button>(R.id.btInit)
 
         val intent = Intent(this, LoginUsers::class.java).apply {
         }
