@@ -8,14 +8,14 @@ import retrofit2.*
 import retrofit2.converter.gson.GsonConverterFactory
 
 class JokeActivity : AppCompatActivity() {
-    val btJoke = findViewById<Button>(R.id.btJoke)
-    val tvJoke = findViewById<TextView>(R.id.tvJoke)
+    //val btJoke = findViewById<Button>(R.id.btJoke)
+    //val tvJoke = findViewById<TextView>(R.id.tvJoke)
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_joke)
 
-
+        val btJoke = findViewById<Button>(R.id.btJoke)
 
         btJoke.setOnClickListener {
             loadJoke()
@@ -24,6 +24,7 @@ class JokeActivity : AppCompatActivity() {
     }
 
     private fun loadJoke() {
+        val tvJoke = findViewById<TextView>(R.id.tvJoke)
         val refrofit = Retrofit.Builder()
             .baseUrl("https://geek-jokes.sameerkumar.website/")
             .addConverterFactory(GsonConverterFactory.create())
