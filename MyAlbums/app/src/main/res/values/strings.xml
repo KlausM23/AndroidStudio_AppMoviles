@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">MyAlbums</string>
+    <string name="my_albums_title">My Albums</string>
+    <string name="detalle_de_album_por_id">Detalle de album por id</string>
+    <string name="listado_de_albums_btn">Listado de albums</string>
+    <string name="consulta_de_albums_por_id">Consulta de albums por id</string>
+    <string name="userid">userId</string>
+    <string name="id">id</string>
+    <string name="title">title</string>
+    <string name="albums_almacenados_en_la_base_de_datos_sqlite">albums almacenados en la base de datos SQLite</string>
+</resources>
