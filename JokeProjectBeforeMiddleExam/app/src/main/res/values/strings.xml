@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">JokeProjectBeforeMiddleExam</string>
+    <string name="iniciar_aplicacion">Iniciar Aplicacion</string>
+    <string name="joke_id_hint">Joke ID</string>
+    <string name="joke_hint">Joke</string>
+    <string name="created_at_hint">Created At</string>
+</resources>
